@@ -1,0 +1,12 @@
+footer {
+    font-family: 'MuseoSansBlack';
+    p {
+        color: #000;
+        &.phone {
+            font-size: 20px;
+        }
+        &.street {
+            font-size: 15p;
+        }
+    }
+}

@@ -21,7 +21,7 @@
 <body>
 
     <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark mt-5" id="navigation">
+    <nav class="navbar navbar-expand-md navbar-dark my-5 pt-3 pb-5" id="navigation">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +29,15 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto d-flex flex-column">
-                <li class="nav-item"><img src="img/phone.png" alt="phone"> +7 (495) 922-60-26</li>
-                <li class="nav-item d-flex align-items-center"><img src="img/location.png" alt="location"> Город Долгопрудный, Московское шоссе, <br>дом 55/3, офис 188</li>
+                <li class="nav-item"><img src="img/phone.png" alt="phone" class="pr-2">+7 (495) 922-60-26</li>
+                <li class="nav-item d-flex align-items-center"><img src="img/location.png" alt="location" class="pr-2"> Город Долгопрудный, Московское шоссе, <br>дом 55/3, офис 188</li>
             </ul>
         </div>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- START HEADER -->
-    <header class="mt-5">
+    <header class="my-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -49,18 +49,18 @@
     <!-- END HEADER -->
 
     <!-- START SECTION ADVANTAGES -->
-    <section id="advantages">
+    <section id="advantages" class="my-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="offset-xl-3 col-xl-3 text-center">
+                <div class="offset-xl-2 col-xl-4 text-center">
                     <img src="img/plus1.png" alt="Plus">
-                    <h4>100% безопасность</h4>
+                    <h4 class="pt-5">100% безопасность</h4>
                     <p>Двери с нашими замками надежнее обычных на 70%.Мы проверяем каждый замок после установки.</p>
                 </div>
 
-                <div class="col-xl-3 text-center">
-                    <img src="img/plus2.png" alt="Plus">
-                    <h4>10 лет гарантии</h4>
+                <div class="col-xl-4 text-center">
+                    <img src="img/plus2.png" alt="Plus" class="plus2">
+                    <h4 class="pt-5">10 лет гарантии</h4>
                     <p>10 лет гарантии на металлоконструкцию, 3 месяца на замки. Вы можете быть уверены в качестве и долговечности наших дверей.</p>
                 </div>
             </div>
@@ -69,12 +69,12 @@
     <!-- END SECTION ADVANTAGES -->
 
     <!-- START TEST BTN SECTION -->
-    <section id="test-btn">
+    <section id="test-btn" class="my-5 pb-3">
         <div class="container">
             <div class="row">
                 <div class="offset-xl-3 col-xl-6">
-                    <button class="btn">
-                        <h3>Узнайте стоимость двери сейчас</h3>
+                    <button class="btn px-3">
+                        <h3 class="mt-2 mb-0">Узнайте стоимость двери сейчас <i class="fa fa-caret-right"></i></h3>
                         <h5>+ получите гарантированный подарок за пройденный тест</h5>
                     </button>
                 </div>
@@ -84,26 +84,33 @@
     <!-- END TEST BTN SECTION -->
 
     <!-- START OUR WORKS SECTION -->
-    <section id="works">
+    <section id="works" class="my-5 pb-5">
         <div class="container">
-            <h2>Примеры наших дверей:</h2>
+            <h2 class="text-center pb-5">Примеры наших дверей:</h2>
             <div class="row justify-content-center">
                 <!-- START CAROUSEL -->
                 <div id="worksCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-lg-4 col-xl-4">
-                                <img class="" src="img/door-1.jpg" alt="1 slide">
+                                <div>
+                                    <img class="" src="img/door-1.jpg" alt="1 slide">
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-xl-4">
-                                <img class="" src="img/door-2.jpg" alt="1 slide">
+                                <div>
+                                    <img class="" src="img/door-2.jpg" alt="1 slide">
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-xl-4">
-                                <img class="" src="img/door-3.jpg" alt="1 slide">
+                                <div>
+                                    <img class="" src="img/door-3.jpg" alt="1 slide">
+                                </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="col-lg-4 col-xl-4">
                                 <img class="" src="img/door-4.jpg" alt="1 slide">
@@ -117,6 +124,7 @@
                                 <img class="" src="img/door-6.jpg" alt="1 slide">
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="col-lg-4 col-xl-4">
                                 <img class="" src="img/door-7.jpg" alt="1 slide">
@@ -124,11 +132,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#worksCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <i class="fa fa-caret-left"></i>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#worksCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <i class="fa fa-caret-right"></i>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -139,16 +147,19 @@
     <!-- END OUR-WORKS SECTION -->
 
     <!-- START FOOTER -->
-    <footer class="d-flex align-items-center">
-        <div>
-            <img src="img/logo.png" alt="logo">
-        </div>
-        <div>
-            <p><img src="img/phone.png" alt="phone"> +7 (495) 922-60-26</p>
-
-        </div>
-        <div>
-            <p class="nav-item d-flex align-items-center"><img src="img/location.png" alt="location"> Город Долгопрудный, Московское шоссе, <br>дом 55/3, офис 188</p>
+    <footer class="d-flex align-items-center py-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-3">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="col-xl-3 ml-auto">
+                    <p class="phone"><img src="img/phone.png" alt="phone" class="pr-2">+7 (495) 922-60-26</p>
+                </div>
+                <div class="col-xl-4">
+                    <p class="street d-flex align-items-center"><img src="img/location.png" alt="location" class="pr-2"> Город Долгопрудный, Московское шоссе, <br>дом 55/3, офис 188</p>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- END FOOTER -->

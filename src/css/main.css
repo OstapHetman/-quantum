@@ -10,9 +10,14 @@
   font-family: 'MuseoSansBlack';
   src: url("../fonts/MuseoSansBlack/MuseoSansBlack.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'MuseoSansMedium';
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype"); }
+
 #navigation ul li:first-child {
   font-family: 'MuseoSansBlack';
-  font-size: 27px; }
+  font-size: 27px;
+  color: #000; }
 
 #navigation ul li:nth-child(2) {
   font-family: 'MuseoSansRegular';
@@ -23,28 +28,100 @@ header {
   header h2 {
     font-size: 41px;
     line-height: 1.5;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color: #000; }
     header h2 span {
       color: #e22a2a; }
 
 #advantages h4 {
   font-family: 'MuseoSansBlack';
   font-size: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #000; }
 
 #advantages p {
   font-family: 'MuseoSansRegular';
-  font-size: 14px; }
+  font-size: 14px;
+  color: #000; }
+
+#advantages .plus2 {
+  height: 163px; }
+
+#test-btn {
+  font-family: 'MuseoSansMedium'; }
+  #test-btn button {
+    background-color: #e22a2a;
+    border-radius: unset;
+    border: 5px #fff solid; }
+  #test-btn h3 {
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase; }
+  #test-btn h5 {
+    color: #fff;
+    font-size: 15px; }
+
+#works h2 {
+  font-family: 'MuseoSansBlack';
+  font-size: 41px;
+  color: #000; }
 
 #works #worksCarousel .carousel-item {
   flex-wrap: wrap; }
   #works #worksCarousel .carousel-item img {
+    height: 200px;
+    width: 305px;
     display: block; }
+
+#works #worksCarousel .fa {
+  font-size: 50px;
+  background-color: #e22a2a;
+  border-radius: 50%;
+  width: 50px; }
 
 #works #worksCarousel .carousel-item-next,
 #works #worksCarousel .carousel-item-prev,
 #works #worksCarousel .carousel-item.active {
   display: flex; }
+
+#works #worksCarousel .carousel-control-prev,
+#works #worksCarousel .carousel-control-next {
+  opacity: 1; }
+
+#works #worksCarousel .carousel-item-next {
+  justify-content: flex-end; }
+
+#works #worksCarousel .carousel-control-prev {
+  left: -10.1%; }
+
+#works #worksCarousel .carousel-control-next {
+  right: -10.1%; }
+
+#works #worksCarousel .carousel-control-prev .fa {
+  font-size: 50px;
+  background-color: #e22a2a;
+  border-radius: 50%;
+  display: flex;
+  padding-left: 10px; }
+
+#works #worksCarousel .carousel-control-next .fa {
+  font-size: 50px;
+  background-color: #e22a2a;
+  border-radius: 50%;
+  display: flex;
+  padding-left: 20px; }
+
+#works #worksCarousel .carousel-item-next {
+  justify-content: flex-start; }
+
+footer {
+  font-family: 'MuseoSansBlack'; }
+  footer p {
+    color: #000; }
+    footer p.phone {
+      font-size: 20px; }
+    footer p.street {
+      font-size: 15p; }
 
 body {
   background: url("../img/bg.png") no-repeat;

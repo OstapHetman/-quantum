@@ -1,15 +1,59 @@
+$iconBg: #e22a2a;
 #works {
+    h2 {
+        font-family: 'MuseoSansBlack';
+        font-size: 41px;
+        color: #000;
+    }
     #worksCarousel {
         .carousel-item {
             flex-wrap: wrap;
             img {
+                height: 200px;
+                width: 305px;
                 display: block;
             }
+        }
+        .fa {
+            font-size: 50px;
+            background-color: $iconBg;
+            border-radius: 50%;
+            width: 50px;
         }
         .carousel-item-next,
         .carousel-item-prev,
         .carousel-item.active {
             display: flex;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+        }
+        .carousel-item-next {
+            justify-content: flex-end;
+        }
+        .carousel-control-prev {
+            left: -10.1%;
+        }
+        .carousel-control-next {
+            right: -10.1%;
+        }
+        .carousel-control-prev .fa {
+            font-size: 50px;
+            background-color: #e22a2a;
+            border-radius: 50%;
+            display: flex;
+            padding-left: 10px;
+        }
+        .carousel-control-next .fa {
+            font-size: 50px;
+            background-color: #e22a2a;
+            border-radius: 50%;
+            display: flex;
+            padding-left: 20px;
+        }
+        .carousel-item-next {
+            justify-content: flex-start;
         }
     }
 }

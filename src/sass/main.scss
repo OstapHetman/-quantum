@@ -13,8 +13,13 @@
 @import 'layout/_header';
 @import 'layout/_advantages';
 @import 'layout/_test-btn';
+@import 'layout/_works';
 @import 'layout/_footer';
 // ======================= //
 // ===== Pages Folder====== //
 @import 'pages/_home';
 // ======================= //
+body {
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,15 @@
+#works {
+    #worksCarousel {
+        .carousel-item {
+            flex-wrap: wrap;
+            img {
+                display: block;
+            }
+        }
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
+            display: flex;
+        }
+    }
+}

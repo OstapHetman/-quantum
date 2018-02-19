@@ -35,3 +35,17 @@ header {
 #advantages p {
   font-family: 'MuseoSansRegular';
   font-size: 14px; }
+
+#works #worksCarousel .carousel-item {
+  flex-wrap: wrap; }
+  #works #worksCarousel .carousel-item img {
+    display: block; }
+
+#works #worksCarousel .carousel-item-next,
+#works #worksCarousel .carousel-item-prev,
+#works #worksCarousel .carousel-item.active {
+  display: flex; }
+
+body {
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover; }

@@ -1,0 +1,14 @@
+#navigation {
+    ul {
+        li {
+            &:first-child {
+                font-family: 'MuseoSansBlack';
+                font-size: 27px;
+            }
+            &:nth-child(2) {
+                font-family: 'MuseoSansRegular';
+                font-size: 15px;
+            }
+        }
+    }
+}

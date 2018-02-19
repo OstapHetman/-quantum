@@ -1,0 +1,12 @@
+$spanClr: #e22a2a;
+header {
+    font-family: 'MuseoSansBlack';
+    h2 {
+        font-size: 41px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        span {
+            color: $spanClr;
+        }
+    }
+}

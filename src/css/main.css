@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'MuseoSansBold';
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'MuseoSansRegular';
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'MuseoSansBlack';
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.ttf") format("truetype"); }
+
+#navigation ul li:first-child {
+  font-family: 'MuseoSansBlack';
+  font-size: 27px; }
+
+#navigation ul li:nth-child(2) {
+  font-family: 'MuseoSansRegular';
+  font-size: 15px; }
+
+header {
+  font-family: 'MuseoSansBlack'; }
+  header h2 {
+    font-size: 41px;
+    line-height: 1.5;
+    letter-spacing: 1px; }
+    header h2 span {
+      color: #e22a2a; }

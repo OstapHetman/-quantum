@@ -26,3 +26,12 @@ header {
     letter-spacing: 1px; }
     header h2 span {
       color: #e22a2a; }
+
+#advantages h4 {
+  font-family: 'MuseoSansBlack';
+  font-size: 20px;
+  text-transform: uppercase; }
+
+#advantages p {
+  font-family: 'MuseoSansRegular';
+  font-size: 14px; }

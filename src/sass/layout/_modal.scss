@@ -1,0 +1,17 @@
+#mapModal {
+    .modal-dialog {
+        font-family: 'MuseoSansRegular';
+        max-width: 603px;
+        top: 18%;
+        .modal-header {
+            background-color: #e22a2a;
+            color: #fff;
+            h5 {
+                font-size: 18px;
+            }
+            button.close {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,14 +1,28 @@
 #navigation {
+    .navbar-brand {
+        p {
+            font-family: 'MuseoSansRegular';
+            font-size: 15px;
+            color: #000;
+            margin: 0;
+        }
+    }
     ul {
         li {
+            a {
+                color: #000;
+                text-decoration: none;
+            }
             &:first-child {
                 font-family: 'MuseoSansBlack';
                 font-size: 27px;
-                color: #000;
             }
             &:nth-child(2) {
                 font-family: 'MuseoSansRegular';
                 font-size: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

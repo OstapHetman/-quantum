@@ -15,4 +15,50 @@ $btnClr: #e22a2a;
         color: #fff;
         font-size: 15px;
     }
+    @-webkit-keyframes pulse {
+        25% {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        75% {
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+        }
+    }
+    @keyframes pulse {
+        25% {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        75% {
+            -webkit-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            transform: scale(0.95);
+        }
+    }
+    .pulse {
+        display: inline-block;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transition: background-color 0.8s ease;
+    }
+    .pulse:hover {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        background-color: #fff;
+        border: 5px $btnClr solid;
+        h3,
+        h5 {
+            color: $btnClr;
+        }
+    }
 }

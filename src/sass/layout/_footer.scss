@@ -1,12 +1,20 @@
 footer {
     font-family: 'MuseoSansBlack';
     p {
-        color: #000;
+        a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: #000;
+            }
+        }
         &.phone {
             font-size: 20px;
         }
         &.street {
-            font-size: 15p;
+            font-size: 15px;
+            cursor: pointer;
         }
     }
 }

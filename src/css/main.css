@@ -14,19 +14,30 @@
   font-family: 'MuseoSansMedium';
   src: url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype"); }
 
+#navigation .navbar-brand p {
+  font-family: 'MuseoSansRegular';
+  font-size: 15px;
+  color: #000;
+  margin: 0; }
+
+#navigation ul li a {
+  color: #000;
+  text-decoration: none; }
+
 #navigation ul li:first-child {
   font-family: 'MuseoSansBlack';
-  font-size: 27px;
-  color: #000; }
+  font-size: 27px; }
 
 #navigation ul li:nth-child(2) {
   font-family: 'MuseoSansRegular';
   font-size: 15px; }
+  #navigation ul li:nth-child(2):hover {
+    cursor: pointer; }
 
 header {
   font-family: 'MuseoSansBlack'; }
   header h2 {
-    font-size: 41px;
+    font-size: 35px;
     line-height: 1.5;
     letter-spacing: 1px;
     color: #000; }
@@ -60,6 +71,45 @@ header {
   #test-btn h5 {
     color: #fff;
     font-size: 15px; }
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  75% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); } }
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  75% {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95); } }
+  #test-btn .pulse {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition: background-color 0.8s ease; }
+  #test-btn .pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #fff;
+    border: 5px #e22a2a solid; }
+    #test-btn .pulse:hover h3,
+    #test-btn .pulse:hover h5 {
+      color: #e22a2a; }
 
 #works h2 {
   font-family: 'MuseoSansBlack';
@@ -116,12 +166,29 @@ header {
 
 footer {
   font-family: 'MuseoSansBlack'; }
-  footer p {
-    color: #000; }
-    footer p.phone {
-      font-size: 20px; }
-    footer p.street {
-      font-size: 15p; }
+  footer p a {
+    color: #000;
+    text-decoration: none; }
+    footer p a:hover {
+      text-decoration: none;
+      color: #000; }
+  footer p.phone {
+    font-size: 20px; }
+  footer p.street {
+    font-size: 15px;
+    cursor: pointer; }
+
+#mapModal .modal-dialog {
+  font-family: 'MuseoSansRegular';
+  max-width: 603px;
+  top: 18%; }
+  #mapModal .modal-dialog .modal-header {
+    background-color: #e22a2a;
+    color: #fff; }
+    #mapModal .modal-dialog .modal-header h5 {
+      font-size: 18px; }
+    #mapModal .modal-dialog .modal-header button.close {
+      color: #fff; }
 
 body {
   background: url("../img/bg.png") no-repeat;

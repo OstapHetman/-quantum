@@ -14,3 +14,13 @@
         height: 163px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    #advantages {
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+}

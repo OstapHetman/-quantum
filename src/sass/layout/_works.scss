@@ -12,6 +12,7 @@ $iconBg: #e22a2a;
                 height: 200px;
                 width: 305px;
                 display: block;
+                margin: auto;
             }
         }
         .fa {
@@ -33,10 +34,10 @@ $iconBg: #e22a2a;
             justify-content: flex-end;
         }
         .carousel-control-prev {
-            left: -10.1%;
+            left: -10%;
         }
         .carousel-control-next {
-            right: -10.1%;
+            right: -10%;
         }
         .carousel-control-prev .fa {
             font-size: 50px;
@@ -54,6 +55,42 @@ $iconBg: #e22a2a;
         }
         .carousel-item-next {
             justify-content: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #works {
+        h2 {
+            font-size: 22px;
+        }
+        #worksCarousel {
+            .carousel-control-next .fa {
+                font-size: 30px;
+                padding-left: 15px;
+            }
+            .carousel-control-prev .fa {
+                font-size: 30px;
+            }
+            .fa {
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #works {
+        #worksCarousel {
+            .carousel-control-prev {
+                left: 0%;
+            }
+            .carousel-control-next {
+                right: 0%;
+            }
+            .carousel-item img {
+                padding-top: 15px;
+            }
         }
     }
 }

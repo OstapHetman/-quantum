@@ -18,3 +18,17 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    footer {
+        .col-12 {
+            display: flex;
+            justify-content: center;
+        }
+        .street {
+            br {
+                display: none;
+            }
+        }
+    }
+}

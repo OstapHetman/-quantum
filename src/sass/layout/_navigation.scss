@@ -27,3 +27,29 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    #navigation {
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .navbar-brand {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #navigation {
+        .container {
+            .nav-item {
+                padding-top: 10px;
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

@@ -201,6 +201,25 @@ header {
 #works #worksCarousel .carousel-item-next {
   justify-content: flex-start; }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #works #worksCarousel {
+    width: 78; }
+    #works #worksCarousel .carousel-item img {
+      width: 235px; } }
+
+@media screen and (max-width: 1200px) {
+  #works #worksCarousel .carousel-control-next {
+    right: -9.6%; }
+    #works #worksCarousel .carousel-control-next .fa {
+      font-size: 30px;
+      padding-left: 15px; }
+  #works #worksCarousel .carousel-control-prev {
+    left: -8%; }
+    #works #worksCarousel .carousel-control-prev .fa {
+      font-size: 30px; }
+  #works #worksCarousel .fa {
+    width: 35px; } }
+
 @media screen and (max-width: 576px) {
   #works h2 {
     font-size: 22px; }
@@ -240,6 +259,12 @@ footer {
     justify-content: center; }
   footer .street br {
     display: none; } }
+
+@media screen and (max-width: 1200px) {
+  footer p.phone {
+    font-size: 14px; }
+  footer p.street {
+    font-size: 13px; } }
 
 #mapModal .modal-dialog {
   font-family: 'MuseoSansRegular';

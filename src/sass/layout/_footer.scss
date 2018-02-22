@@ -32,3 +32,14 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    footer {
+        p.phone {
+            font-size: 14px;
+        }
+        p.street {
+            font-size: 13px;
+        }
+    }
+}

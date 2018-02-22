@@ -59,6 +59,40 @@ $iconBg: #e22a2a;
     }
 }
 
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    #works {
+        #worksCarousel {
+            width: 78;
+            .carousel-item img {
+                width: 235px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #works {
+        #worksCarousel {
+            .carousel-control-next {
+                right: -9.6%;
+                .fa {
+                    font-size: 30px;
+                    padding-left: 15px;
+                }
+            }
+            .carousel-control-prev {
+                left: -8%;
+                .fa {
+                    font-size: 30px;
+                }
+            }
+            .fa {
+                width: 35px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     #works {
         h2 {

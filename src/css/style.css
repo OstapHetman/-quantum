@@ -641,6 +641,16 @@ label.error {
     left: 5px;
 }
 
+.pick-item__input:checked+.pick-item__label.check-type:after {
+    content: '\2713';
+    border-radius: unset;
+    background-color: unset;
+    color: #e22a2a;
+    top: -3px;
+    left: 3px;
+    font-size: 23px;
+}
+
 .pick-item__label {
     font-size: 13px;
     line-height: 1;
@@ -658,6 +668,10 @@ label.error {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.pick-item__label.check-type:before {
+    border-radius: unset;
 }
 
 .pick-item__label.size-label {
@@ -777,7 +791,6 @@ label.error {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    background: url("img/done.png") no-repeat top center;
     text-align: center;
 }
 
@@ -980,6 +993,14 @@ label.error {
 
 #simpleModal .closeBtn:hover {
     cursor: pointer;
+}
+
+.no-radio {
+    margin-top: 145px;
+}
+
+.attention span {
+    color: #e22a2a;
 }
 
 @keyframes modalopen {

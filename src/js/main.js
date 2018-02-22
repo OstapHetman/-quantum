@@ -15,8 +15,6 @@ $(document).ready(function() {
         process: doProgress
     };
 
-    // console.log(progress);
-
     function doProgress() {
         testSlider = $('.test-slider').bxSlider({
             mode: 'fade',
@@ -54,9 +52,6 @@ $(document).ready(function() {
                 };
 
                 var toTopDoc = window.parent.document.querySelector('.fancybox-slide--iframe');
-
-                // console.log(toTopDoc);
-
                 $(toTopDoc).animate({ scrollTop: 0 }, 0);
 
             }
@@ -66,13 +61,38 @@ $(document).ready(function() {
 
     $(".quickview").on("click", doProgress);
 
-    // testSlider.goToSlide(4);
-
-    $('.pick-item__input').on('change', function(event) {
+    $('.pick-item__input.not-important').on('change', function(event) {
         event.preventDefault();
         $('.btn-next-container').addClass('btn-next-container_active');
         $('.btn-next').addClass('btn-next_active btn-shine');
     });
+
+    $('.pick-item__input.must-have').on('change', function(event) {
+        event.preventDefault();
+        if ($('.pick-item__input.must-have:checked').length == 2) {
+            console.log($('.must-have:checked').length);
+            $('.btn-next-container').addClass('btn-next-container_active');
+            $('.btn-next').addClass('btn-next_active btn-shine');
+        }
+    });
+
+    $('.pick-item__input.size').on('change', function(event) {
+        event.preventDefault();
+        if ($('#step2-1').val().length > 0 && $('#step2-2').val().length > 0 && $('#step2-3').val().length > 0) {
+            $('.btn-next-container').addClass('btn-next-container_active');
+            $('.btn-next').addClass('btn-next_active btn-shine');
+        }
+    });
+
+    $('.pick-item__input.must-have2').on('change', function(event) {
+        event.preventDefault();
+        if ($('.pick-item__input.must-have2:checked').length == 2) {
+            console.log($('.must-have2:checked').length);
+            $('.btn-next-container').addClass('btn-next-container_active');
+            $('.btn-next').addClass('btn-next_active btn-shine');
+        }
+    });
+
 
     $('form').each(function(index, el) {
         $(el).validate({
@@ -87,13 +107,18 @@ $(document).ready(function() {
                         testSlider.goToSlide($('.step-slide').length - 1);
                         $('.header-line').slideUp(300);
                         $('.progress-line').slideUp(300);
+                        $('input[type="radio"]').prop('checked', false);
+                        $('input[type="checkbox"]').prop('checked', false);
+                        $('input[type="text"]').val('');
                     }
                 });
             }
         });
     });
+    $("#next1").click(function() {
+        $("#step2-1").focus();
+    });
 });
-
 
 // Get modal element
 

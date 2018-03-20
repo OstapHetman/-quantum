@@ -608,6 +608,14 @@ label.error {
     text-align: center;
 }
 
+.pick-item__img.otdelka {
+    height: unset;
+}
+
+.pick-item__img.otdelka img {
+    min-height: 172px;
+}
+
 .pick-item__img img {
     display: inline-block;
     height: 100%;
